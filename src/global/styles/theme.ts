@@ -14,7 +14,7 @@ export default {
     SHAPE: '#FFFFFF',
     TITLE: '#363F5F',
     TEXT: '#969CB2',
-    BACKGROUD: '#F0F2F5',
+    BACKGROUND: '#F0F2F5',
   },
 
   FONTS: {
