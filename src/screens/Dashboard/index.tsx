@@ -7,7 +7,6 @@ export function Dashboard() {
     <Sc.Container>
       <Sc.Header>
         <Sc.UserContainer>
-
           <Sc.UserInfo>
             <Sc.Photo source={{ uri: 'https://avatars.githubusercontent.com/u/12676148?v=4' }} />
             <Sc.User>
@@ -20,7 +19,10 @@ export function Dashboard() {
             </Sc.User>
           </Sc.UserInfo>
 
+          <Sc.Icon name='power' />
+
         </Sc.UserContainer>
+
 
       </Sc.Header>
     </Sc.Container>
