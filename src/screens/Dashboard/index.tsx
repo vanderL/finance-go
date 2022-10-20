@@ -1,4 +1,5 @@
 import React from 'react';
+import { HighlightCard } from '../../Components/HighlightCard';
 
 import * as Sc from './styles';
 
@@ -25,6 +26,8 @@ export function Dashboard() {
 
 
       </Sc.Header>
+
+      <HighlightCard />
     </Sc.Container>
   )
 }
