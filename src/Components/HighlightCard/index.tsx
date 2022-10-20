@@ -5,7 +5,7 @@ export function HighlightCard() {
     <Sc.Container>
       <Sc.Header>
         <Sc.Title>
-          Entrada
+          Entradas
         </Sc.Title>
         <Sc.Icon name="arrow-up-circle" />
       </Sc.Header>

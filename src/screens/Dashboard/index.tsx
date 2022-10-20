@@ -27,7 +27,12 @@ export function Dashboard() {
 
       </Sc.Header>
 
-      <HighlightCard />
+
+      <Sc.HighlightCards>
+        <HighlightCard />
+        <HighlightCard />
+        <HighlightCard />
+      </Sc.HighlightCards>
     </Sc.Container>
   )
 }
