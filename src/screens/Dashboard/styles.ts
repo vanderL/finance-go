@@ -2,6 +2,7 @@ import styled from 'styled-components/native';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 import { Feather } from '@expo/vector-icons';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
+import { FlatList } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
@@ -71,14 +72,14 @@ export const HighlightCards = styled.ScrollView.attrs({
 })`
   width: 100%;
   position: absolute;
-  margin-top: ${RFPercentage(24)}px;
+  margin-top: ${RFPercentage(20)}px;
 `;
 
 export const Transactions = styled.View`
   flex: 1;
   padding: 0 24px;
 
-  margin-top: ${RFPercentage(16)}px;
+  margin-top: ${RFPercentage(12)}px;
 `;
 
 export const Title = styled.Text`
@@ -86,3 +87,5 @@ export const Title = styled.Text`
   font-family: ${({ theme }) => theme.FONTS.REGULAR};
   margin-bottom: ${RFValue(16)}px;
 `;
+
+export const TransactionsList = styled(FlatList)``;

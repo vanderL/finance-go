@@ -12,7 +12,7 @@ export const Container = styled.View<TypeProps>`
     type === 'total' ? theme.COLORS.SECONDARY : theme.COLORS.SHAPE
   };
 
-  width: ${RFValue(300)}px;
+  width: ${RFValue(280)}px;
   border-radius: 5px;
 
   padding: 19px 23px;
