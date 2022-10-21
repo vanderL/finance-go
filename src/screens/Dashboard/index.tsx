@@ -27,7 +27,6 @@ export function Dashboard() {
 
       </Sc.Header>
 
-
       <Sc.HighlightCards>
         <HighlightCard
           type="up"
@@ -50,6 +49,12 @@ export function Dashboard() {
 
         />
       </Sc.HighlightCards>
+
+      <Sc.Transactions>
+        <Sc.Title>
+          Listagem
+        </Sc.Title>
+      </Sc.Transactions>
     </Sc.Container>
   )
 }
