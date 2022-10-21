@@ -1,21 +1,37 @@
 import * as Sc from './styles';
 
-export function HighlightCard() {
+interface Props {
+  type: 'up' | 'down' | 'total';
+  title: string;
+  amount: string;
+  lastTransaction: string;
+}
+
+const icon = {
+  up: 'arrow-up-circle',
+  down: 'arrow-down-circle',
+  total: 'dollar-sign'
+}
+
+export function HighlightCard({ title, amount, lastTransaction, type }: Props) {
   return (
-    <Sc.Container>
+    <Sc.Container type={type}>
       <Sc.Header>
-        <Sc.Title>
-          Entradas
+        <Sc.Title type={type}>
+          {title}
         </Sc.Title>
-        <Sc.Icon name="arrow-up-circle" />
+        <Sc.Icon
+          name={icon[type]}
+          type={type}
+        />
       </Sc.Header>
 
       <Sc.Footer>
-        <Sc.Amount>
-          R$ 17.400,00
+        <Sc.Amount type={type}>
+          {amount}
         </Sc.Amount>
-        <Sc.LastTransaction>
-          Última entrada dia 13 de abril
+        <Sc.LastTransaction type={type}>
+          {lastTransaction}
         </Sc.LastTransaction>
       </Sc.Footer>
     </Sc.Container>
