@@ -6,6 +6,15 @@ import { TransactionCard } from '../../Components/TransactionCard';
 import * as Sc from './styles';
 
 export function Dashboard() {
+  const data = {
+    title: 'Desenvolvimento de Site',
+    amount: 'R$ 12.000,00',
+    category: {
+      name: 'freelance', icon: 'dollar-sign'
+    },
+    date: '12/03/2022',
+  }
+
   return (
     <Sc.Container>
       <Sc.Header>
@@ -56,7 +65,9 @@ export function Dashboard() {
         <Sc.Title>
           Listagem
         </Sc.Title>
-        <TransactionCard />
+        <TransactionCard
+          data={data}
+        />
       </Sc.Transactions>
     </Sc.Container>
   )

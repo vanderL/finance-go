@@ -2,23 +2,44 @@ import React from 'react';
 
 import * as Sc from './styles';
 
-export function TransactionCard() {
+interface Category {
+  name: string;
+  icon: string;
+}
+
+interface Data {
+  title: string;
+  amount: string;
+  category: Category;
+  date: string;
+}
+
+interface Props {
+  data: Data
+}
+
+export function TransactionCard({ data }: Props) {
   return (
     <Sc.Container>
-      <Sc.Title>Desenvolvimento de Site</Sc.Title>
-      <Sc.Amount>R$ 12.000,00</Sc.Amount>
+      <Sc.Title>
+        {data.title}
+      </Sc.Title>
+      <Sc.Amount>
+        {data.amount}
+      </Sc.Amount>
 
       <Sc.Footer>
         <Sc.Category>
           <Sc.Icon name="dollar-sign" />
           <Sc.CategoryName>
-            Vendas
+            {data.category.name}
           </Sc.CategoryName>
         </Sc.Category>
 
-        <Sc.Date>13/04/2021</Sc.Date>
+        <Sc.Date>
+          {data.date}
+        </Sc.Date>
       </Sc.Footer>
-
     </Sc.Container>
   )
 }
