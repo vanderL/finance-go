@@ -10,28 +10,31 @@ import * as Sc from './styles';
 export function Dashboard() {
   const data = [
     {
+      type: 'positive',
       title: 'Desenvolvimento de Site',
       amount: 'R$ 12.000,00',
       category: {
-        name: 'freelance', icon: 'dollar-sign'
+        name: 'Trabalho', icon: 'dollar-sign'
+      },
+      date: '08/03/2022',
+    },
+    {
+      type: 'negative',
+      title: 'Hambuguer',
+      amount: 'R$ 2.000,00',
+      category: {
+        name: 'Alimentação', icon: 'coffee'
       },
       date: '12/03/2022',
     },
     {
-      title: 'Desenvolvimento de Aplicativo',
-      amount: 'R$ 12.000,00',
+      type: 'negative',
+      title: 'Aluguel do Apto',
+      amount: 'R$ 500,00',
       category: {
-        name: 'freelance', icon: 'dollar-sign'
+        name: 'Casa', icon: 'home'
       },
-      date: '12/03/2022',
-    },
-    {
-      title: 'Desenvolvimento de Site',
-      amount: 'R$ 12.000,00',
-      category: {
-        name: 'freelance', icon: 'dollar-sign'
-      },
-      date: '12/03/2022',
+      date: '10/03/2022',
     }
   ]
 
