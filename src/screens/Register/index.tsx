@@ -1,4 +1,6 @@
 import React from "react";
+
+import { Button } from "../../Components/Forms/Button";
 import { Input } from "../../Components/Forms/Input";
 
 import * as Sc from './styles';
@@ -13,11 +15,17 @@ export function Register() {
       </Sc.Header>
 
       <Sc.Form>
-        <Input
-          placeholder="Nome"
-        />
-        <Input
-          placeholder="Preço"
+        <Sc.Fields>
+          <Input
+            placeholder="Nome"
+          />
+          <Input
+            placeholder="Preço"
+          />
+        </Sc.Fields>
+
+        <Button
+          title="Enviar"
         />
       </Sc.Form>
     </Sc.Container>
